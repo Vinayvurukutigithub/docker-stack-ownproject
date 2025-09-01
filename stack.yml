@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    image: IMAGE_PLACEHOLDER
+    ports:
+      - "8081:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
